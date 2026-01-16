@@ -1,0 +1,121 @@
+/* Cool, Professional, Royal Red/Gold/Black Theme with High-Contrast Accent */
+:root{
+  --bg-img: url('../images/background.jpg');
+  --body-bg: #0a0a0a; /* Deep Black/Dark Charcoal */
+  --card-bg-start: #1c1c1c; /* Very Dark Gray */
+  --card-bg-end: #000000; /* Pure Black */
+  
+  /* UPDATED COLORS: Changed from Purple to Royal Red */
+  --accent-purple: #d90429; /* Primary vibrant accent color (Royal Red) */
+  --accent-gold: #ffc400; /* Secondary vibrant accent color (Bright Gold/Amber) */
+  
+  --text: #f0f0f0;
+  --success-color: #39ff14; /* Keeping a bright green for success icons */
+  --accent: var(--accent-purple);
+  --shadow-color: rgba(217, 4, 41, 0.5); /* Red shadow */
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family: 'Poppins', sans-serif, -apple-system; /* Modern, clean font */
+  background:var(--body-bg);
+  color:var(--text);
+}
+
+body{
+  /* Deep black/dark gray gradient */
+  background-image: linear-gradient(135deg, #0a0a0a, #1c1c1c); 
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+
+.card{
+  width:100%;
+  max-width:440px; /* Increased from 400px */
+  /* Dark gradient background for depth */
+  background: linear-gradient(180deg, var(--card-bg-start), var(--card-bg-end));
+  border-radius:16px;
+  padding:22px; /* Increased from 20px */
+  text-align:center;
+  /* Deep shadow for pop-out effect */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.9), 0 0 15px var(--shadow-color);
+  backdrop-filter: blur(4px);
+  border: 2px solid var(--accent-purple); /* Accent border (Royal Red) */
+}
+
+.avatar-wrap{display:flex;justify-content:center;margin-top:-48px}
+.avatar{
+    width:110px; /* Increased from 100px */
+    height:110px; /* Increased from 100px */
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid var(--accent-gold); /* Secondary accent border (Gold) */
+    box-shadow: 0 0 0 5px var(--card-bg-start), 0 0 20px var(--accent-purple);
+}
+
+.title{
+    font-size:24px; /* Increased from 22px */
+    margin:15px 0 10px;
+    font-weight:900;
+    color:var(--accent-purple); /* Royal Red color */
+    text-shadow: 0 0 10px var(--shadow-color);
+}
+
+.features{
+    list-style:none;
+    padding:0;
+    margin:15px 0 20px;
+    color:var(--text);
+    font-size:15px; /* Increased from 14px */
+    line-height:1.8;
+    text-align:center; 
+    display:block; 
+    max-width:400px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.features li{
+    margin:9px 0;
+    padding: 9px 6px;
+    font-weight: 500;
+    /* Subtle glow on list items */
+    border-bottom: 1px solid rgba(240, 240, 240, 0.1); 
+}
+.features li:last-child {
+    border-bottom: none;
+}
+.features li i {
+    margin-left: 5px;
+    color: var(--success-color); 
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.7);
+}
+.features .small-text {
+    font-size: 14px; /* Increased from 13px */
+    font-style: italic;
+    margin-top: 15px;
+    color: rgba(240, 240, 240, 0.7);
+}
+
+.cta-btn{
+  display:inline-block;
+  width:90%;
+  max-width:330px; /* Increased from 300px */
+  padding:15px 19px; /* Increased padding */
+  margin:10px 0 18px;
+  border-radius:30px;
+  text-decoration:none;
+  /* Gradient button for a modern look */
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-gold)); /* Red to Gold gradient */
+  color:#ffffff; /* Light text for contrast against dark button */
+  font-weight:700;
+  font-size:16px; /* Increased from 15px */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Prominent shadow/glow */
+  box-shadow: 0 0 10px var(--shadow-color), 0 10px 20px rgba(0,0,0,0.5);
+  transition: all .3s cubic-bezier(.2
+}
