@@ -1,18 +1,15 @@
-/* Cool, Professional, Royal Red/Gold/Black Theme with High-Contrast Accent */
+/* Cool, Professional, Royal Purple/Gold/Black Theme with High-Contrast Accent */
 :root{
   --bg-img: url('../images/background.jpg');
   --body-bg: #0a0a0a; /* Deep Black/Dark Charcoal */
   --card-bg-start: #1c1c1c; /* Very Dark Gray */
   --card-bg-end: #000000; /* Pure Black */
-  
-  /* UPDATED COLORS: Changed from Purple to Royal Red */
-  --accent-purple: #d90429; /* Primary vibrant accent color (Royal Red) */
-  --accent-gold: #ffc400; /* Secondary vibrant accent color (Bright Gold/Amber) */
-  
+  --accent-purple: #00ff41; /* CHANGED TO GREEN (Primary) */
+  --accent-gold: #008f11; /* CHANGED TO DARKER GREEN ("and other") */
   --text: #f0f0f0;
   --success-color: #39ff14; /* Keeping a bright green for success icons */
   --accent: var(--accent-purple);
-  --shadow-color: rgba(217, 4, 41, 0.5); /* Red shadow */
+  --shadow-color: rgba(0, 255, 65, 0.5); /* CHANGED TO GREEN SHADOW */
 }
 
 *{box-sizing:border-box}
@@ -43,7 +40,7 @@ body{
   /* Deep shadow for pop-out effect */
   box-shadow: 0 15px 40px rgba(0,0,0,0.9), 0 0 15px var(--shadow-color);
   backdrop-filter: blur(4px);
-  border: 2px solid var(--accent-purple); /* Accent border (Royal Red) */
+  border: 2px solid var(--accent-purple); /* Accent border (Green) */
 }
 
 .avatar-wrap{display:flex;justify-content:center;margin-top:-48px}
@@ -52,7 +49,7 @@ body{
     height:110px; /* Increased from 100px */
     border-radius:50%;
     object-fit:cover;
-    border:5px solid var(--accent-gold); /* Secondary accent border (Gold) */
+    border:5px solid var(--accent-gold); /* Secondary accent border (Green) */
     box-shadow: 0 0 0 5px var(--card-bg-start), 0 0 20px var(--accent-purple);
 }
 
@@ -60,7 +57,7 @@ body{
     font-size:24px; /* Increased from 22px */
     margin:15px 0 10px;
     font-weight:900;
-    color:var(--accent-purple); /* Royal Red color */
+    color:var(--accent-purple); /* Green color */
     text-shadow: 0 0 10px var(--shadow-color);
 }
 
@@ -108,7 +105,7 @@ body{
   border-radius:30px;
   text-decoration:none;
   /* Gradient button for a modern look */
-  background: linear-gradient(90deg, var(--accent-purple), var(--accent-gold)); /* Red to Gold gradient */
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-gold)); /* Green Gradient */
   color:#ffffff; /* Light text for contrast against dark button */
   font-weight:700;
   font-size:16px; /* Increased from 15px */
@@ -117,5 +114,5 @@ body{
   
   /* Prominent shadow/glow */
   box-shadow: 0 0 10px var(--shadow-color), 0 10px 20px rgba(0,0,0,0.5);
-  transition: all .3s cubic-bezier(.2
+  transition: all .3s cubic-bezier(.2);
 }
